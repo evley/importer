@@ -1,0 +1,21 @@
+{
+  "name": "@evley/importer",
+  "version": "0.0.1",
+  "description": "Simple Angular importer to get data into an Evley.app. However, its a general all purpose data import to local storage styled with Angular Material. P.s. Built with Angular Ivy which is only compatible with Angular 9.0.0+.",
+  "author": "Craig Thomas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evley/importer"
+  },
+  "bugs": {
+    "url": "https://github.com/evley/importer/issues"
+  },
+  "homepage": "https://github.com/evley/importer",
+  "keywords": ["angular", "ivy", "typescript", "javascript", "data importer"],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "tslib": "^1.10.0"
+  }
+}

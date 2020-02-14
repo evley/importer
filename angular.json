@@ -125,6 +125,46 @@
           }
         }
       }
+    },
+    "importer": {
+      "projectType": "library",
+      "root": "projects/importer",
+      "sourceRoot": "projects/importer/src",
+      "prefix": "evley",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/importer/tsconfig.lib.json",
+            "project": "projects/importer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/importer/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/importer/src/test.ts",
+            "tsConfig": "projects/importer/tsconfig.spec.json",
+            "karmaConfig": "projects/importer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/importer/tsconfig.lib.json",
+              "projects/importer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "importer-demo"
