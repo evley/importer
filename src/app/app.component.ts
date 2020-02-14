@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ImportMethod } from 'ngx-evley-importer';
+import { ImportMethod } from '@evley/importer';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,6 @@ import { ImportMethod } from 'ngx-evley-importer';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public appId = 'fire';
+  public name = 'fire';
   public importMethods = [ImportMethod.CSV];
 }

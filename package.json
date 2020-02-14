@@ -1,5 +1,5 @@
 {
-  "name": "importer",
+  "name": "importer-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -25,7 +25,7 @@
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
-    "ngx-evley-importer": "0.0.1"
+    "@evley/importer": "0.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.1",
