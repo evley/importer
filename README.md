@@ -1,6 +1,6 @@
 # NgxEvleyImporter
 
-Simple importer to get data into the various Evley.app. 
+Simple importer to get data into an Evley.app. 
 
 # Installation
 
