@@ -11,7 +11,7 @@
     "url": "https://github.com/evley/importer/issues"
   },
   "homepage": "https://github.com/evley/importer",
-  "keywords": ["angular", "ivy", "typescript", "javascript", "data importer"],
+  "keywords": ["angular", "typescript", "javascript", "csv", "data importer"],
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^9.0.0",
