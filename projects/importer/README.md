@@ -19,10 +19,10 @@ npm install @evley/importer
 
 ### @Inputs()
 
-| Input            | Type    | Required                   | Description                                                                                               |
+| Input            | Type    | Description                                                                                               |
 | ---------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------- |
-| name           | string  | **YES**                    | Name will be used as the local storage name only
-| inputMethods           | ImportMethod[]  | **YES**                    | Specify supported import methods from the ImportMethod enum
+| name           | string  | Name will be used as the local storage name only
+| inputMethods           | ImportMethod[]  | Specify supported import methods from the ImportMethod enum
 
 
 ## Usage
@@ -30,7 +30,7 @@ npm install @evley/importer
 Import module:
 
 ```typescript
-import { evleyImporter } from '@evley/importer';
+import { ImporterModule } from '@evley/importer';
 ```
 
 Set component properties:
