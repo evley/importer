@@ -12,12 +12,12 @@ Steps to reproduce:
 
 #### Expected Behavior
 
-What behavior were you expecting to see?
+What behaviour were you expecting to see?
 
 
-#### Actual Behavior
+#### Actual Behaviour
 
-What behavior did you actually see?
+What behaviour did you actually see?
 
 
 #### Environment
