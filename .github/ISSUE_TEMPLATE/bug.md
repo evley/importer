@@ -9,7 +9,7 @@ Steps to reproduce:
 1.
 2.
 
-#### Expected Behavior
+#### Expected Behaviour
 
 What behaviour were you expecting to see?
 
