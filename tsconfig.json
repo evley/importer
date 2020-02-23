@@ -20,7 +20,6 @@
     ],
     "paths": {
       "importer": [
-        "dist/importer/importer",
         "dist/importer"
       ]
     }
