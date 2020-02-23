@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import { CSVtoArray } from './csvToArray';
 import { isExt } from './isExt';
-import { matchNonQuotedCommas } from './matchNonQuotedCommas';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +16,8 @@ export class CsvService {
         reader.onload = () => {
           const data = String(reader.result);
           const lines = data.split('\n');
-          const headers = lines[0].toLowerCase().split(',');
-          const lineMatcher = (line: string) => line.match(matchNonQuotedCommas) || [];
+          const headers = CSVtoArray(lines[0].toLowerCase());
+          const lineMatcher = (line: string) => CSVtoArray(line);
           const result = lines
             .filter((_, i) => i > 0)
             .filter((line) => lineMatcher(line).length === headers.length)
