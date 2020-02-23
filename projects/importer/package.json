@@ -1,6 +1,6 @@
 {
   "name": "@evley/importer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple Angular importer to get data into an Evley.app. However, its a general all purpose data import to local storage styled with Angular Material. P.s. Built with Angular Ivy which is only compatible with Angular 9.0.0+.",
   "author": "Craig Thomas",
   "repository": {
