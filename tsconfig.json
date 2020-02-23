@@ -19,8 +19,11 @@
       "dom"
     ],
     "paths": {
-      "importer": [
-        "dist/importer"
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
+      "@evley/importer": [
+        "./dist/importer"
       ]
     }
   },
