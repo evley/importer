@@ -8,6 +8,10 @@ import { ImportMethod } from '@evley/importer';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public name = 'fire';
+  public name = 'demo';
   public importMethods = [ImportMethod.CSV];
+
+  public onImportClosed(imported: boolean): void {
+    console.log('Imported:', imported);
+  }
 }

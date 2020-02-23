@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 import { ImporterDialogData } from './importer-dialog/importer-dialog-data.interface';
@@ -10,8 +10,9 @@ import { ImportMethod } from './importer-dialog/method/import-method.enum';
   templateUrl: './importer.component.html'
 })
 export class ImporterComponent {
-  @Input() public name: string;
-  @Input() public importMethods: Array<keyof typeof ImportMethod> = [];
+  @Input() public name: string = 'evley-import';
+  @Input() public importMethods: Array<keyof typeof ImportMethod> = Object.values(ImportMethod);
+  @Output() public importClosed = new EventEmitter<boolean>();
 
   constructor(private _dialog: MatDialog) {}
 
@@ -25,5 +26,7 @@ export class ImporterComponent {
       autoFocus: false,
       data
     });
+
+    dialogRef.afterClosed().subscribe((imported: boolean) => this.importClosed.emit(imported));
   }
 }

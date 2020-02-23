@@ -63,11 +63,11 @@ export class ImporterDialogComponent {
     this._csvService
       .csvToJson(this._csvFile)
       .then((data) => this._setItemToLocalStorage(this.data.name, data))
-      .then(() => this._closeDialog());
+      .then(() => this._closeDialog(true));
   }
 
-  private _closeDialog(): void {
-    this._dialogRef.close();
+  private _closeDialog(imported: boolean): void {
+    this._dialogRef.close(imported);
   }
 
   private _setItemToLocalStorage(key: string, data: object): void {
