@@ -17,10 +17,12 @@ export class CsvService {
           const data = String(reader.result);
           const lines = data.split('\n');
           const headers = lines[0].toLowerCase().split(',');
+          const lineMatcher = (line: string) => line.match(matchNonQuotedCommas) || [];
           const result = lines
-            .filter((line, i) => i > 0)
+            .filter((_, i) => i > 0)
+            .filter((line) => lineMatcher(line).length === headers.length)
             .map((line) =>
-              (line.match(matchNonQuotedCommas) || []).reduce((obj, lineSplit, j) => {
+              lineMatcher(line).reduce((obj, lineSplit, j) => {
                 obj[headers[j]] = lineSplit;
                 return obj;
               }, {})
