@@ -9,16 +9,13 @@ Steps to reproduce:
 1.
 2.
 
-
 #### Expected Behavior
 
 What behaviour were you expecting to see?
 
-
 #### Actual Behaviour
 
 What behaviour did you actually see?
-
 
 #### Environment
 
